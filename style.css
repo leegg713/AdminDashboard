@@ -1,0 +1,98 @@
+* {
+    border: 2px solid red;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 10px; /* Gap between columns and rows */
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 10px; /* Gap between columns and rows */
+}
+
+.container2 div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout */
+    }
+
+    .container2 {
+        grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout */
+    }
+
+}
+/* Assigns a row and styles Items 1a, 2a, and 3a */
+#Item-1a,
+#Item-2a,
+#Item-3a {
+    grid-row: 1;
+}
+
+
+/* Assigns a row and styles Items 1a, 2a, and 3a */
+#Item-1b,
+#Item-2b,
+#Item-3b,
+#Item-4b {
+    grid-row: 2;
+}
+
+#Item-1c,
+#Item-2c,
+#Item-3c,
+#Item-4c,
+#Item-5c,
+#Item-6c,
+#Item-7c,
+#Item-8c,
+#Item-9c {
+    grid-row: 3;
+}
+
+/* Search bar styling and placement within grid(Use percentages) */
+#Item-1a{
+   
+}
+
+/* Full name of user styling*/
+#Item-2a{
+    
+}
+
+/* Log out button styling*/
+#Item-3a button{
+    background-color: red;
+    color: white;
+}
+/* Welcome message styling*/
+#Item-1b{
+    font-size: large;
+}
+
+/* New lift button styling*/
+#Item-2b button{
+    background-color: blue;
+    
+}
+
+/* Update lift button styling*/
+#Item-3b button{
+    background-color: blue;
+    
+}
+/* Delete button styling*/
+#Item-4b button{
+    background-color: red;
+    color: white;
+}
