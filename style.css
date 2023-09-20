@@ -1,17 +1,19 @@
-* {
-    border: 2px solid red;
-  }
 
-  .wrapper {
+
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    grid-gap: 10px; /* Gap between columns and rows */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns with equal width */
+    grid-gap: 10px;
+    /* Gap between columns and rows */
 }
 
 .container2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    grid-gap: 10px; /* Gap between columns and rows */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    grid-gap: 10px;
+    /* Gap between columns and rows */
 }
 
 .container2 div {
@@ -24,14 +26,54 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .wrapper {
-        grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout */
+        grid-template-columns: repeat(1, 1fr);
+        /* Switch to a single column layout */
     }
 
     .container2 {
-        grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout */
+        grid-template-columns: repeat(1, 1fr);
+        /* Switch to a single column layout */
     }
-
 }
+
+.container {
+    background-image: url(workoutImage.jpg);
+    background-size: cover;
+    /* Cover the entire div with the background image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-position: center center;
+    /* Center the background image horizontally and vertically */
+}
+
+/* This will style the links on the right(The Divs) */
+
+.container div {
+    padding: 10px;
+    /* Add padding to divs for spacing */
+    background-color: #f0f0f0;
+    /* Add a background color to divs */
+    border-radius: 5px;
+    /* Add rounded corners to divs */
+    margin: 5px;
+    /* Add margin for spacing between divs */
+    text-align: center;
+    /* Center text horizontally in divs */
+    width: 10%;
+}
+
+
+
+
+/* This will style the a elements in the side bar on the left */
+.container a {
+    border-radius: 5px;
+    /* Add rounded corners to links */
+    margin: 5px;
+    color: black;
+}
+
+
 /* Assigns a row and styles Items 1a, 2a, and 3a */
 #Item-1a,
 #Item-2a,
@@ -47,7 +89,7 @@
 #Item-4b {
     grid-row: 2;
 }
-
+/* Styles the workout data blocks */
 #Item-1c,
 #Item-2c,
 #Item-3c,
@@ -58,41 +100,64 @@
 #Item-8c,
 #Item-9c {
     grid-row: 3;
+    font-size: small;
+}
+/* Most recent workout styling */
+#Item-1c{
+    font-size: larger;
 }
 
 /* Search bar styling and placement within grid(Use percentages) */
-#Item-1a{
-   
+#Item-1a {
+    background-color: grey;
+    color: black;
 }
 
 /* Full name of user styling*/
-#Item-2a{
-    
+#Item-2a {
+    font-size: large;
+    font-weight: bold;
+}
+/* Moves the log out div to the right */
+#Item-3a{
+    margin-left: 600%;
+   
 }
 
 /* Log out button styling*/
-#Item-3a button{
+#Item-3a button {
     background-color: red;
     color: white;
+    border-radius: 5px;
+    /* Add rounded corners to divs */
+    
 }
+
 /* Welcome message styling*/
-#Item-1b{
+#Item-1b {
     font-size: large;
 }
 
 /* New lift button styling*/
-#Item-2b button{
+#Item-2b button {
     background-color: blue;
-    
+    border-radius: 5px;
+    /* Add rounded corners to divs */
+
 }
 
 /* Update lift button styling*/
-#Item-3b button{
+#Item-3b button {
     background-color: blue;
-    
+    border-radius: 5px;
+    /* Add rounded corners to divs */
+
 }
+
 /* Delete button styling*/
-#Item-4b button{
+#Item-4b button {
     background-color: red;
     color: white;
+    border-radius: 5px;
+    /* Add rounded corners to divs */
 }
